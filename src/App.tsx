@@ -22,16 +22,18 @@ import WorkExperience from './components/Work Experience'
 function App() {
   
   return (
-    <>
-      <div className='p-6 flex flex-col gap-6 justify-center'>
+    // Centers the sections
+    <div className='flex flex-col gap-6 justify-center items-center'>
+      {/* Main container */}
+      <div className='p-6 flex flex-col gap-6 justify-center items-center'>
         <nav>
-        
+          <button className='p-2 border bg-black'>Education</button>
         </nav>
 
-        <header className='flex gap-6 border p-6 rounded-3xl'>
+        <header className='flex gap-6 p-6 rounded-3xl MajorSectionBg'>
           
           <div className='size-68 rounded-[9000px]'>
-            <img className="size-68 rounded-[9000px] " src={pfp1}/>
+            <img className="size-68 rounded-[9000px] border" src={pfp1}/>
           </div>
           <section>
             <h3 className="text-2xl">Paulo E. Heymann</h3>
@@ -84,11 +86,17 @@ function App() {
           </section>
         </header>
         {/*MAIN CONTENT*/}
-        <section>
+        <section className='flex w-full'>
+          <div>
+
+          </div>
+          <div>
+
+          </div>
           <WorkExperience/>
         </section>
       </div>    
-    </>
+    </div>
   )
 }
 

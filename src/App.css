@@ -6,4 +6,6 @@
 
 html {
   font-family: "Inter", system-ui, sans-serif;
+  color: white;
+  background: black;
 }

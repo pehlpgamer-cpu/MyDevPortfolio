@@ -22,8 +22,25 @@ html {
   @apply flex gap-2 items-center p-2 rounded-lg bg-black/70
 }
 /* https://www.creative-tim.com/twcomponents/gradient-generator */
+
+/* Glassmorphism Cards https://www.youtube.com/watch?v=Owx1vhhOXEM */
+.MajorSectionBg1
+{ @apply
+  bg-black/10 backdrop-blur-[2px]
+border border-white/10
+before:content-[''] 
+before:absolute
+before:inset-0
+before:border
+before:border-black/20
+before:rounded-2xl
+}
+
 .MajorSectionBg {
-  @apply  bg-gradient-to-bl from-pink-600/30 to-purple-600/30  backdrop-blur-xs backdrop-contrast-100 hover:bg-black/20 duration-500 ease-in-out
+  @apply inset-shadow-white/50 inset-shadow-2xs
+  bg-linear-to-bl from-pink-600/30 to-purple-600/30  
+  backdrop-blur-xs backdrop-contrast-100 
+  hover:bg-black/20 duration-500 ease-in-out
 
 
 }

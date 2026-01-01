@@ -75,7 +75,7 @@ function App() {
 
             <span className='flex gap-2 items-center w-full'>
               <FaX className='p-0.5 text-xl size-6 bg-red-600'/>
-              <label className='text-xl'> Not looking for opportunities</label> 
+              <label className='text-xl'>Not available for hire</label> 
             </span>
             {/*Tech Stack*/}
             <div className="flex gap-2 mt-2">
